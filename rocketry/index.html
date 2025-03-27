@@ -1,0 +1,207 @@
+<header>
+    <nav>
+        <a href="mailto:example@example.com">Email↗</a>
+        <a href="resume.pdf" target="_blank">Resume↗</a>
+        <a href="https://linkedin.com/in/example" target="_blank">LinkedIn↗</a>
+        <a href="https://github.com/example" target="_blank">GitHub↗</a>
+    </nav>
+</header>
+<br>
+<a href="/" data-route>← Back</a>
+<br><h1>Waterloo Rocketry</h1>
+<p>Waterloo Rocketry is The University of Waterloo's student lead rocket design team, of which I was a member throughout my degree from 2019 to 2024. Below are some of my notable contributions to the team which lead to our 2022 Spaceport America Cup entry and subsequent rocket designs. To read more about the team, detailed project reports and more see <a href="https://www.waterloorocketry.com/" target="_blank">Waterloo Rocketry's website.</a></p> 
+<h3 id="-kraken-of-the-sky-kots-hybrid-rocket-for-the-2022-spaceport-america-cup-"><strong>Kraken of the Sky (KotS) - Hybrid Rocket for the 2022 Spaceport America Cup</strong></h3>
+<p><strong>Team:</strong> Waterloo Rocketry, University of Waterloo<br><strong>Role:</strong> Recovery System Design, Testing, and Implementation<br><strong>Competition:</strong> Intercollegiate Rocket Engineering Competition (IREC) at the Spaceport America Cup (SAC)<br><strong>Category:</strong> 30,000 ft Apogee, Student Researched and Developed (SRAD) Hybrid/Liquid Propulsion</p>
+<hr>
+<h3 id="-project-overview-"><strong>Project Overview</strong></h3>
+<img src="/images/rocket.png">
+<h5>Figure 1: Simplified rocket diagram</h5>
+<p>Kraken of the Sky (KotS) is a hybrid rocket developed by Waterloo Rocketry for the 2022 Spaceport America Cup. The rocket is powered by the <strong>Kismet engine</strong>, a nitrous oxide/hydroxyl-terminated polybutadiene (HTPB) hybrid propulsion system, and is the third iteration in the Kismet series, following <strong>Unexploded Ordnance (UXO, 2018)</strong> and <strong>Shark of the Sky (SotS, 2019)</strong>.</p>
+<p><strong>Primary Mission Goals:</strong></p>
+<ol>
+<li>Achieve an apogee of <strong>26,000 ft ± 2,000 ft</strong>.
+</li>
+<li>Ensure a <strong>non-hazardous descent</strong> using a novel <strong>reefed parachute system</strong>.
+</li>
+</ol>
+<p><strong>Secondary Mission Goals:</strong></p>
+<ul>
+<li>Collect data on the performance of <strong>radiation shielding materials</strong> against galactic cosmic rays during flight.</li>
+</ul>
+<hr>
+<h3 id="-key-contributions-recovery-system-design-"><strong>Key Contributions: Recovery System Design</strong></h3>
+<p>As a member of the recovery team, I played a central role in the design, testing, and implementation of a <strong>two-stage reefed parachute system</strong> for KotS. The system was developed to address <strong>three partial recovery failures</strong> in previous competitions with Kismet series (e.g., Shark of the Sky, 2019), a <strong>two-parachute system</strong> was used for recovery, which resulted in hard landings. This system primarily consisted of:</p>
+<ol>
+<li><strong>Drogue Parachute:</strong> Deployed at apogee to stabilize the rocket during the initial high-speed descent.</li>
+<li><strong>Main Parachute:</strong> Deployed at a lower altitude (typically around 1,000-1,500 ft AGL) to slow the rocket for a safe landing.</li>
+</ol>
+<p>While this system worked in principle, it introduced several challenges:</p>
+<ul>
+<li><strong>Increased Weight:</strong> Two parachutes, along with their deployment mechanisms, added significant mass to the rocket.</li>
+<li><strong>Complexity:</strong> The system required separate deployment events for the drogue and main parachutes, increasing the risk of failure.</li>
+<li><strong>Space Constraints:</strong> Storing two parachutes and their associated hardware took up valuable space in the rocket’s airframe, limiting payload capacity.</li>
+</ul>
+<hr>
+<h3 id="-advantages-of-a-reefed-parachute-system-"><strong>Advantages of a Reefed Parachute System</strong></h3>
+<p>The <strong>reefed parachute system</strong> used in Kraken of the Sky (KotS) addresses these challenges by combining the functions of the drogue and main parachutes into a single, multi-stage system.</p>
+<img src="/images/reefingdiagram.png">
+<h5>Figure 2: Step-by-step deployment diagram of the reefing system</h5>
+<p>Key advantages include:</p>
+<ol>
+<li><p><strong>Weight Reduction:</strong></p>
+<ul>
+<li>A single parachute with a reefing mechanism is lighter than two separate parachutes, reducing the overall mass of the recovery system.</li>
+</ul>
+</li>
+<li><p><strong>Space Efficiency:</strong></p>
+<ul>
+<li>A reefed parachute takes up less space than two parachutes, freeing up room in the airframe for other components or payloads.</li>
+<li>The compact design simplifies packing and integration into the rocket.</li>
+</ul>
+</li>
+<li><p><strong>Improved Performance:</strong></p>
+<ul>
+<li>The reefed parachute provides better control over descent rates during both high-speed and low-speed phases, ensuring a stable and safe recovery.</li>
+<li>The system is highly tunable, allowing for precise adjustments to the reefing ratio and control line length to meet mission requirements.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="-system-overview-"><strong>System Overview</strong></h3>
+<p>The recovery system for KotS is a <strong>two-stage, reefed parachute system</strong> designed to ensure a controlled descent and safe landing. The disreefing sequence is a critical phase of the recovery system, transitioning the parachute from a reefed (partially inflated) state to a fully inflated state to slow the rocket for a safe landing. At <strong>1,500 ft AGL</strong>, the dual redundant altimeters (PerfectFlite StratoLogger and Featherweight Raven 4) trigger the <strong>pyro-cutters</strong>, which sever a string holding the <strong>two-ring release mechanism</strong>. This mechanism consists of a small metal ring passed through a larger metal ring and tied back with the pyrocutter string. When the string is cut, the tension in the <strong>reefing control line</strong> is released, allowing the parachute skirt to fully expand. The control line, which runs through metal rings at the inner seam line of each parachute gore, is designed to constrict the parachute during the reefed phase. Once released, the parachute inflates fully, reducing the descent rate from <strong>112 ft/s</strong> to <strong>29.5 ft/s</strong>. The two-ring release mechanism was chosen to <strong>halve the load on the pyrocutter string</strong> and absorb the shock of initial inflation, preventing damage to the parachute or rocket. This design ensures a smooth and reliable transition, minimizing the risk of tangling or malfunction during disreefing. Key components include:</p>
+<ol>
+<li><p><strong>Main Parachute:</strong></p>
+<ul>
+<li><p>A <strong>12.4 ft diameter semi-elliptical parachute</strong>, sewn in-house using black and yellow ripstop nylon, based on Richard Nakka’s design. The parachute operates in two phases:</p>
+<ul>
+<li><strong>Reefed Phase:</strong> Acts as a drogue, maintaining a descent rate of <strong>112 ft/s</strong>.</li>
+<li><strong>Disreefing Phase:</strong> At <strong>1,500 ft AGL</strong>, redundant pyro-cutters release the reefing line, allowing the parachute to fully inflate and slow the rocket to a safe landing speed of <strong>29.5 ft/s</strong>.
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Pilot Parachute:</strong></p>
+<ul>
+<li>A small <strong>0.61 m flat parachute</strong> (bright orange) attached to the vent of the main parachute.
+</li>
+<li>Ensures the main parachute is pulled out of its bag and into the airstream during deployment.
+</li>
+</ul>
+</li>
+<li><p><strong>Redundant Deployment Mechanisms:</strong></p>
+<ul>
+<li><strong>Dual Altimeters:</strong> PerfectFlite StratoLogger and Featherweight Raven 4 control the deployment sequence.
+</li>
+<li><strong>CO2 Ejectors:</strong> Two 38 g CO2 canisters pressurize the parachute bay, breaking nylon shear pins (rated at 72 lbf) and separating the nosecone.
+</li>
+<li><strong>Pyro-Cutters:</strong> Redundant pyro-cutters sever a string holding a <strong>two-ring release mechanism</strong>, which disengages the reefing control line and allows full parachute inflation.
+</li>
+<img src="/images/cadrecelec.png">
+<h5>Figure 3: CAD rendering of the recovery electronics board</h5>
+</ul>
+</li>
+<li><p><strong>Reefing Mechanism:</strong></p>
+<ul>
+<li>A <strong>single continuous control line</strong>, routed through metal rings at the parachute skirt, constricts the parachute during the reefed phase.
+</li>
+<li>The control line length was optimized through extensive <strong>ground-based parachute truck tests</strong> and <strong>wind tunnel testing</strong> to achieve the desired drag area and descent rate.
+</li>
+</ul>
+<li><p><strong>Recovery Section Bulkhead</strong></p>
+<ul>
+<li>An aluminum bulkhead separates the recovery section from the rest of the rocket, housing the recovery electronics and deployment mechanisms.
+</li>
+<img src="/images/feabulkhead.png">
+<h5>Figure 4: SolidWorks FEA analysis of recovery section bulkhead</h5>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="-design-challenges-and-solutions-"><strong>Design Challenges and Solutions</strong></h3>
+<ol>
+<li><p><strong>Challenge: Hard Landings Under Drogue</strong></p>
+<ul>
+<li>Previous rockets experienced hard landings due to insufficient drag during the reefed phase.
+</li>
+<li><p><strong>Solution:</strong></p>
+<ul>
+<li>Designed a <strong>reefed parachute system</strong> with a precise control line length, optimized through iterative testing.
+</li>
+<li>Conducted <strong>parachute truck tests</strong> to generate a <strong>line length-to-drag area curve</strong>, ensuring the system met competition requirements (75-150 ft/s descent rate).
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Challenge: Ensuring Redundancy and Reliability</strong></p>
+<ul>
+<li>Deployment mechanisms in previous rockets had single points of failure.
+</li>
+<li><p><strong>Solution:</strong></p>
+<ul>
+<li>Implemented <strong>dual CO2 ejectors</strong> and <strong>dual pyro-cutters</strong> for redundancy.
+</li>
+<li>Conducted <strong>ground testing</strong> to validate that a single CO2 ejector or pyrocutter could successfully deploy the system.
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<img src="/images/pyrotest.png">
+<h5>Figure 5: Pyro-cutter testing for reefing control line release</h5>
+<li><p><strong>Challenge: Shock Loading During Disreefing</strong></p>
+<ul>
+<li>The rapid deceleration during disreefing posed a risk of damaging the rocket or tangling the parachute lines.
+</li>
+<li><p><strong>Solution:</strong></p><ul>
+<li>Designed a <strong>two-ring release mechanism</strong> to halve the load on the pyrocutter string and absorb shock during disreefing.
+</li>
+<li>Conducted <strong>shock loading analysis</strong> to ensure the system could handle the forces experienced during deployment.
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="-testing-and-validation-"><strong>Testing and Validation</strong></h3>
+<p>The recovery system underwent extensive testing to validate its performance and reliability. <strong>Parachute truck tests</strong> were conducted to evaluate different reefing concepts, including skirt reefing, vent reefing, and control line skirt reefing. These tests involved towing a scaled parachute behind a vehicle at varying speeds to simulate descent conditions. The goal was to determine the optimal <strong>control line length</strong> and <strong>reefing ratio</strong> to achieve the desired drag area and descent rate. Through iterative testing, a <strong>single continuous control line</strong> tied to one point and routed through metal rings at the skirt was selected for its simplicity, consistent shape, and resistance to tangling. Additionally, <strong>wind tunnel testing</strong> was performed to validate the parachute’s performance under controlled airflow conditions, confirming its ability to maintain a stable descent rate during both reefed and disreefed phases. <strong>Ground deployment tests</strong> simulated the full recovery sequence, including nosecone separation, parachute deployment, and disreefing. These tests verified the functionality of the CO2 ejectors, pyro-cutters, and two-ring release mechanism, ensuring redundancy and reliability. Shock loading analysis was also conducted to ensure the system could handle the forces experienced during deployment and disreefing. This rigorous testing process ensured the recovery system met competition requirements and could perform reliably under real-world conditions. </p>
+<ol>
+<li><p><strong>Parachute Truck Tests:</strong></p>
+<ul>
+<li>Scaled tests were performed to evaluate different reefing concepts, including <strong>skirt reefing</strong>, <strong>vent reefing</strong>, and <strong>control line skirt reefing</strong>.
+</li>
+<li>A <strong>single continuous control line</strong> tied to one point and routed through metal rings at the skirt was selected for its simplicity, consistent shape, and resistance to tangling.
+</li>
+</ul>
+</li>
+<li><p><strong>Wind Tunnel Testing:</strong></p>
+<ul>
+<li>Validated the drag area and performance of the reefed parachute under controlled conditions.
+</li>
+<li>Confirmed the parachute’s ability to maintain a stable descent rate during both reefed and disreefed phases. Detailed measurements such as wind speed over time and load on attachment point over time were recorded
+</ul>
+</li>
+<img src="/images/windtunnel.png">
+<h5>Figure 6: Wind tunnel testing of reefed parachute</h5>
+<li><p><strong>Ground Deployment Tests:</strong></p>
+<ul>
+<li>Simulated the full deployment sequence, including nosecone separation, parachute deployment, and disreefing.</li>
+<li>Verified the functionality of the CO2 ejectors, pyro-cutters, and two-ring release mechanism.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="-impact-and-outcomes-"><strong>Impact and Outcomes</strong></h3>
+<ul>
+<li>Successfully designed and implemented a <strong>reliable recovery system</strong>, addressing previous failures and ensuring a safe descent for KotS.
+</li>
+<li>Contributed to the team’s goal of reaching a <strong>26,000 ft apogee</strong> and collecting valuable scientific data on radiation shielding materials.
+</li>
+<li>Gained hands-on experience in <strong>systems engineering</strong>, <strong>parachute design</strong>, and <strong>testing methodologies</strong>.
+</li>
+</ul>
+
+<footer>
+    <p>&copy; 2025 Taha Aziz</p>
+</footer>

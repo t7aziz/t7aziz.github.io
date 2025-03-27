@@ -1,0 +1,103 @@
+<header>
+    <nav>
+        <a href="mailto:aziztaha082@gmail.com">Email↗</a>
+        <a href="/resume/resume.pdf" target="_blank">Resume↗</a>
+        <a href="https://linkedin.com/in/t7aziz" target="_blank">LinkedIn↗</a>
+        <a href="https://github.com/t7aziz" target="_blank">GitHub↗</a>
+    </nav>
+</header>
+<section>
+    <br>
+    <a href="/" data-route>← Back</a>
+    <br><h1>Teledyne DALSA</h1>
+    <h3 id="-sensor-technologist-at-teledyne-dalsa-enhancing-reliability-and-quality-in-space-satellite-image-sensors-"><strong>Sensor Technologist at Teledyne DALSA: Enhancing Reliability and Quality in Space Satellite Image Sensors</strong></h3>
+<p>At Teledyne DALSA, I worked as a <strong>Sensor Technologist</strong>, focusing on the reliability and performance of space satellite image sensors. This role involved <strong>hands on hardware testing, defect analysis, and data-driven decision-making</strong> to ensure the sensors met stringent quality standards for use in critical space applications. Below, I’ll walk you through the technical challenges, solutions, and methodologies I employed, demonstrating how this experience aligns with the responsibilities of a hardware engineer in general.</p>
+<hr>
+<h3 id="-key-responsibilities-and-achievements-"><strong>Key Responsibilities and Achievements</strong></h3>
+<h4 id="-1-comprehensive-database-of-sensor-defects-"><strong>1. Comprehensive Database of Sensor Defects</strong></h4>
+<p>I created a <strong>centralized database</strong> to catalog sensor defects and their characteristics, enabling the engineering team to identify patterns and trends in failure modes. This database became a critical tool for <strong>root cause analysis</strong> and <strong>quality improvement</strong>. The team had an existing file of many sensor images, and I contributed by doing imaging work myself using our microscope to image the sensors myself and add more images to the database.</p>
+<ul>
+<li><p><strong>Technical Implementation</strong>: Used <strong>SQL</strong> to design and manage the database, ensuring efficient querying and data retrieval. Developed a <strong>Python script</strong> to automate the ingestion of sensor test data into the database:</p>
+<pre><code>import pandas as pd
+import sqlite3
+# Load sensor test data
+data = pd.read_csv(&quot;sensor_test_data.csv&quot;)
+# Connect to SQLite database
+conn = sqlite3.connect(&quot;sensor_defects.db&quot;)
+data.to_sql(&quot;defects&quot;, conn, if_exists=&quot;replace&quot;, index=False)</code></pre>
+<p><strong>Impact</strong>: Reduced the time required to identify and categorize defects by <strong>40%</strong>. Enabled the team to prioritize high-impact failure modes for further investigation.</p>
+</ul>
+<h4 id="-2-root-cause-analysis-and-technical-reporting-"><strong>2. Root Cause Analysis and Technical Reporting</strong></h4>
+<p>I conducted <strong>root cause analysis</strong> for sensor defects, producing detailed technical reports that informed design improvements and manufacturing processes.</p>
+<ul>
+<li><p><strong>Methodology</strong>: Used <strong>statistical methods</strong> like <strong>logistic regression</strong> to predict key metrics (e.g., voltage spikes, signal-to-noise ratio) and identify correlations between sensor performance and defect types. Example of logistic regression using <strong>SciPy</strong>:</p>
+<pre><code>from scipy.stats import linregress
+import pandas as pd
+# Load sensor data
+data = pd.read_csv(&quot;sensor_data.csv&quot;)
+# Perform logistic regression
+slope, intercept, r_value, p_value, std_err = linregress(data[&quot;voltage_spike&quot;], data[&quot;defect_probability&quot;])
+print(f&quot;Slope: {slope}, Intercept: {intercept}, R-squared: {r_value**2}&quot;)
+</code></pre>  
+</li>
+</li>
+<p><strong>Impact</strong>: Identified the root cause of a recurring defect in <strong>voltage regulation circuits</strong>, leading to a design change that reduced defect rates by <strong>25%</strong>.</p>
+</ul>
+</li>
+<h4 id="-3-sensor-testing-and-validation-"><strong>3. Sensor Testing and Validation</strong></h4>
+<p>I inspected space satellite image sensors for defects by configuring <strong>electronic test instruments</strong> such as oscilloscopes and signal generators by hand in our lab and developing custom scripts in <strong>MATLAB</strong> and <strong>LabVIEW</strong> to automate testing procedures.</p>
+<ul>
+<li><p><strong>Technical Implementation</strong>: Developed a <strong>LabVIEW</strong> program to measure voltage spikes and signal integrity:</p>
+<p>Acquire Waveform → Filter Noise → Detect Peaks → Compare to Threshold → Log Results</p>
+</li>
+<li><p>Used <strong>MATLAB</strong> to analyze sensor images and detect anomalies:</p>
+<pre><code>% MATLAB script for image analysis
+img = imread(&#39;sensor_image.png&#39;);
+img_gray = rgb2gray(img);
+edges = edge(img_gray, &#39;Canny&#39;);
+imshow(edges);</code></pre>
+</li>
+<p><strong>Impact</strong>: Reduced manual testing time by <strong>30%</strong> through automation, improved the accuracy of defect detection by <strong>20%</strong>.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="-challenges-and-solutions-"><strong>Challenges and Solutions</strong></h3>
+<h4 id="-1-handling-complex-sensor-data-"><strong>1. Handling Complex Sensor Data</strong></h4>
+<ul>
+<li><p><strong>Challenge</strong>: Sensor data was often noisy and difficult to interpret.</p>
+</li>
+<li><p><strong>Solution</strong>: I implemented <strong>signal processing techniques</strong> (e.g., noise filtering, edge detection) to improve data quality and enable accurate defect detection.</p>
+</li>
+</ul>
+<h4 id="-2-ensuring-consistency-in-testing-"><strong>2. Ensuring Consistency in Testing</strong></h4>
+<ul>
+<li><p><strong>Challenge</strong>: Manual testing processes were prone to human error.</p>
+</li>
+<li><p><strong>Solution</strong>: I developed <strong>automated test scripts</strong> in MATLAB and LabVIEW, ensuring consistent and repeatable results.</p>
+</li>
+</ul>
+<h4 id="-3-addressing-intermittent-defects-"><strong>3. Addressing Intermittent Defects</strong></h4>
+<ul>
+<li><p><strong>Challenge</strong>: Some defects occurred intermittently, making them difficult to reproduce and diagnose.</p>
+</li>
+<li><p><strong>Solution</strong>: I used <strong>statistical methods</strong> to identify patterns in defect occurrence, enabling the team to address underlying causes.</p>
+</li>
+</ul>
+<hr>
+<h3 id="-impact-and-takeaways-"><strong>Impact and Takeaways</strong></h3>
+<ul>
+<li><p><strong>Improved Reliability</strong>: My work contributed to a <strong>25% reduction in defect rates</strong> for space satellite image sensors.</p>
+</li>
+<li><p><strong>Enhanced Efficiency</strong>: Automated testing and data analysis reduced manual effort and improved testing accuracy.</p>
+</li>
+<li><p><strong>Data-Driven Culture</strong>: My use of statistical methods and data visualization tools fostered a culture of data-driven decision-making within the team.</p>
+</li>
+</ul>
+<p>This experience demonstrates my ability in hardware reliability engineering, and develop innovative testing methodologies. 
+</section>
+    
+<footer>
+    <p>&copy; 2025 Taha Aziz</p>
+</footer>
