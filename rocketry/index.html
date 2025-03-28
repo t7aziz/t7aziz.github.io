@@ -1,3 +1,9 @@
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+<div id="app">
 <header>
     <nav>
         <a href="mailto:example@example.com">Email↗</a>
@@ -45,7 +51,7 @@
 <h3 id="-advantages-of-a-reefed-parachute-system-"><strong>Advantages of a Reefed Parachute System</strong></h3>
 <p>The <strong>reefed parachute system</strong> used in Kraken of the Sky (KotS) addresses these challenges by combining the functions of the drogue and main parachutes into a single, multi-stage system.</p>
 <img src="/images/reefingdiagram.png">
-<h5>Figure 2: Step-by-step deployment diagram of the reefing system</h5>
+<h5>Figure 2: Step-by-step deployment squence diagram of the reefing system</h5>
 <p>Key advantages include:</p>
 <ol>
 <li><p><strong>Weight Reduction:</strong></p>
@@ -62,13 +68,14 @@
 <li><p><strong>Improved Performance:</strong></p>
 <ul>
 <li>The reefed parachute provides better control over descent rates during both high-speed and low-speed phases, ensuring a stable and safe recovery.</li>
-<li>The system is highly tunable, allowing for precise adjustments to the reefing ratio and control line length to meet mission requirements.</li>
+<li>The system is highly tunable, allowing for precise adjustments to the reefing ratio and control line length to meet mission requirements. Electrically, the CAN bus consists of a differential wire pair for communications which connects the modules of the rocket in a tree topology, and is build around the PIC18 microcontroller. Some of these electronics sit on a single PCB in the recovery module.</li>
 </ul>
 </li>
 </ol>
 <hr>
 <h3 id="-system-overview-"><strong>System Overview</strong></h3>
-<p>The recovery system for KotS is a <strong>two-stage, reefed parachute system</strong> designed to ensure a controlled descent and safe landing. The disreefing sequence is a critical phase of the recovery system, transitioning the parachute from a reefed (partially inflated) state to a fully inflated state to slow the rocket for a safe landing. At <strong>1,500 ft AGL</strong>, the dual redundant altimeters (PerfectFlite StratoLogger and Featherweight Raven 4) trigger the <strong>pyro-cutters</strong>, which sever a string holding the <strong>two-ring release mechanism</strong>. This mechanism consists of a small metal ring passed through a larger metal ring and tied back with the pyrocutter string. When the string is cut, the tension in the <strong>reefing control line</strong> is released, allowing the parachute skirt to fully expand. The control line, which runs through metal rings at the inner seam line of each parachute gore, is designed to constrict the parachute during the reefed phase. Once released, the parachute inflates fully, reducing the descent rate from <strong>112 ft/s</strong> to <strong>29.5 ft/s</strong>. The two-ring release mechanism was chosen to <strong>halve the load on the pyrocutter string</strong> and absorb the shock of initial inflation, preventing damage to the parachute or rocket. This design ensures a smooth and reliable transition, minimizing the risk of tangling or malfunction during disreefing. Key components include:</p>
+<p>The recovery system for KotS is a <strong>two-stage, reefed parachute system</strong> designed to ensure a controlled descent and safe landing. The disreefing sequence is a critical phase of the recovery system, transitioning the parachute from a reefed (partially inflated) state to a fully inflated state to slow the rocket for a safe landing. At <strong>1,500 ft AGL</strong>, the dual redundant altimeters (PerfectFlite StratoLogger and Featherweight Raven trigger the <strong>pyro-cutters</strong>, which sever a string holding the <strong>two-ring release mechanism</strong>. This mechanism consists of a small metal ring passed through a larger metal ring and tied back with the pyrocutter string. When the string is cut, the tension in the <strong>reefing control line</strong> is released, allowing the parachute skirt to fully expand. The control line, which runs through metal rings at the inner seam line of each parachute gore, is designed to constrict the parachute during the reefed phase. Once released, the parachute inflates fully, reducing the descent rate from <strong>112 ft/s</strong> to <strong>29.5 ft/s</strong>. The two-ring release mechanism was chosen to <strong>halve the load on the pyrocutter string</strong> and absorb the shock of initial inflation, preventing damage to the parachute or rocket. This design ensures a smooth and reliable transition, minimizing the risk of tangling or malfunction during disreefing.</p>
+<p>The avionics system features a CAN bus, altimeters, a GPS tracking module, Live Telemetry Transmitter, Logger Board, and some other parts which are detailed in the full report. The CAN protocol was selected for it's ruggedness, strong noise immunity, and democratized protocol lended to good fault tolerance. Key components include:</p>
 <ol>
 <li><p><strong>Main Parachute:</strong></p>
 <ul>
@@ -205,3 +212,5 @@
 <footer>
     <p>&copy; 2025 Taha Aziz</p>
 </footer>
+</div>
+</body>
