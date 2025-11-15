@@ -3,7 +3,7 @@ import { Header, ProjectCard } from '../components/components.js';
 export function HomePage() {
     const projects = [
         {
-            image: null,
+            image: '../images/pern.png',
             title: 'User Auth Service',
             description: 'Full-stack user authentication and account management app made with React, Node.js, Postgres, TypeScript, and Rust',
             links: [
@@ -12,7 +12,7 @@ export function HomePage() {
             ]
         },
         {
-            image: null,
+            image: '../images/visjit.png',
             title: 'Vis-jit',
             description: 'Npm module for visualizing Node.js V8 engine jit compiler optimizations',
             links: [
@@ -21,7 +21,7 @@ export function HomePage() {
             ]
         },
         {
-            image: null,
+            image: '../images/gps.png',
             title: 'Rocket GPS Tracker',
             description: 'C++ Software to track the relative position of the rocket using GPS and RF',
             links: [
