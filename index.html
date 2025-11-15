@@ -5,92 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taha Aziz</title>
-    <link rel="preload" href="images/sample.png" as="image">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/main.css">
-    <script src="scripts/app.js"></script>
-    <script src="scripts/markdownParser.js" defer></script> <!-- Include the new script -->
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <div id="app">
-        <header>
-            <nav>
-                <a href="mailto:aziztaha082@gmail.com">Email↗</a>
-                <a href="/resume/TahaAziz_resume.pdf" target="_blank">Resume↗</a>
-                <a href="https://linkedin.com/in/t7aziz" target="_blank">LinkedIn↗</a>
-                <a href="https://github.com/t7aziz" target="_blank">GitHub↗</a>
-            </nav>
-        </header>
+    <div id="app"></div>
 
-        <section id="about">
-            <br>
-            <a href="/about" data-route>Hi, I'm Taha →</a>
-            <br>
-            <p>
-                I'm best known for my recent work at Sentia as a software engineer, and I have an interdisciplinary
-                background, having performed in various engineering roles throughout my career. I studied Mechatronics
-                Engineering at the University of Waterloo, and graduated in 2024. I'm particularly interested in 3D
-                printing, machine vision, and trains. See my experience below.
-            </p>
-        </section>
+    <!-- External Dependencies -->
+    <script src="https://unpkg.com/navigo@8.11.1/lib/navigo.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
-        <!-- New section to display Markdown content -->
-        <section id="markdown-content">
-            <h2>Markdown Content</h2>
-            <div id="content"></div> <!-- Placeholder for parsed content -->
-        </section>
-
-        <section id="work">
-            <a href="/work" data-route>
-                <h2>Sentia Solutions</h2>
-                <h3> · Software Engineer · 2023 - 2024</h3>
-            </a>
-            <p>Data engineered a log management system</p>
-        </section>
-
-        <section id="srtx">
-            <a href="/srtx" data-route>
-                <h2>Sheertex</h2>
-                <h3> · Manufacturing Engineer · 2022</h3>
-            </a>
-            <p>Implemented novel machine vision system</p>
-        </section>
-
-        <section id="dalsa">
-            <a href="/dalsa" data-route>
-                <h2>Teledyne DALSA</h2>
-                <h3> · Sensor Engineer · 2021</h3>
-            </a>
-            <p>Tested space satellite sensors</p>
-        </section>
-
-        <section id="rocketry">
-            <a href="/rocketry" data-route>
-                <h2>Waterloo Rocketry</h2>
-                <h3> · Team Member · 2019 - 2024</h3>
-            </a>
-            <p>Recovery team</p>
-        </section>
-
-        <section id="internships">
-            <a href="/internships" data-route>
-                <h2>Other</h2>
-                <h3> · Various · 2019 - 2022</h3>
-            </a>
-            <p>Other co-ops and projects</p>
-        </section>
-        <!--
-        <section id="github">
-            <h2>GitHub Project</h2>
-            <h3>Project Name · Date</h3>
-            <p>Description of the GitHub project. <a href="/github" data-route>Read more →</a></p>
-        </section>
-        -->
-        <footer>
-            <p>&copy; 2025 Taha Aziz</p>
-        </footer>
-    </div>
+    <!-- Router (initializes the app) -->
+    <script type="module" src="scripts/router.js"></script>
 </body>
 
 </html>
