@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/main.css">
     <script src="scripts/app.js"></script>
+    <script src="scripts/markdownParser.js" defer></script> <!-- Include the new script -->
 </head>
+
 <body>
     <div id="app">
         <header>
@@ -25,8 +28,17 @@
             <a href="/about" data-route>Hi, I'm Taha →</a>
             <br>
             <p>
-                I'm best known for my recent work at Sentia as a software engineer, and I have an interdisciplinary background, having performed in various engineering roles throughout my career. I studied Mechatronics Engineering at the University of Waterloo, and graduated in 2024. I'm particularly interested in 3D printing, machine vision, and trains. See my experience below.
+                I'm best known for my recent work at Sentia as a software engineer, and I have an interdisciplinary
+                background, having performed in various engineering roles throughout my career. I studied Mechatronics
+                Engineering at the University of Waterloo, and graduated in 2024. I'm particularly interested in 3D
+                printing, machine vision, and trains. See my experience below.
             </p>
+        </section>
+
+        <!-- New section to display Markdown content -->
+        <section id="markdown-content">
+            <h2>Markdown Content</h2>
+            <div id="content"></div> <!-- Placeholder for parsed content -->
         </section>
 
         <section id="work">
@@ -80,4 +92,5 @@
         </footer>
     </div>
 </body>
+
 </html>
