@@ -14,7 +14,7 @@ export function HomePage() {
         {
             image: '../images/visjit.png',
             title: 'Vis-jit',
-            description: 'Npm module for visualizing Node.js V8 engine jit compiler optimizations',
+            description: '400+ users, npm module for visualizing Node.js V8 engine jit compiler optimizations',
             links: [
                 { text: 'npmjs', url: 'https://www.npmjs.com/package/vis-jit' },
                 { text: 'GitHub', url: 'https://github.com/t7aziz/vis-jit' }
@@ -37,7 +37,7 @@ export function HomePage() {
             <section class="section">
                 <h1><a href="/about" data-navigo class="name-link">Hi, I'm Taha →</a></h1>
                 <p>I'm a software engineer, currently based in Toronto and previously at <a href="https://www.sentia.ca/" target="_blank">Sentia</a>. I studied <a href="https://uwaterloo.ca/engineering/future-students/mechatronics-engineering"  target="_blank">Mechatronics Engineering</a> and <a href="https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/programs/HklAkk00j2?group=Options&bc=true&bcCurrent=Computing%20Option"  target="_blank">Computing</a> at the University of Waterloo. </p>
-                <p>As an SWE I'm currently increasing my knowledge of system design and modern technologies while working on my personal projects.</p>
+                <p>As an SWE I'm currently working on OSS and fleshing out new features and product ideas.</p>
                 <p>Outside of work, I enjoy playing basketball, creative writing, and game development.</p>
             </section>
             
