@@ -54,6 +54,7 @@ export function Header() {
                 <a href="./documents/Taha_Aziz_resume.pdf" target="_blank">Resume</a>
                 <a href="https://linkedin.com/in/t7aziz" target="_blank" rel="noopener">LinkedIn</a>
                 <a href="https://github.com/t7aziz" target="_blank" rel="noopener">Github</a>
+                <a href="https://x.com/taha_aaa_" target="_blank" rel="noopener">Twitter</a>
             </nav>
         </header>
     `;

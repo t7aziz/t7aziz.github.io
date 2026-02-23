@@ -10,7 +10,7 @@
     --text-muted: #666;
     --text-hover: #959595;
     --text-underline: #dbdbdb;
-    --border: #e5e5e5;
+    --border: #dddddd;
     --accent: #0066cc;
     --accent-hover: #7da6d0;
     --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -71,19 +71,20 @@ nav#navbar {
 /* Typography */
 h1 {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: -1px;
     margin-bottom: 1rem;
 }
 
 h2 {
     font-size: 1.5rem;
+    font-weight: 500;
     margin-bottom: 1rem;
 }
 
 h3 {
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 p,
@@ -142,10 +143,12 @@ a:hover {
     margin-bottom: 2rem;
 }
 
+/*
 .project-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-hover);
 }
+*/
 
 .project-card img {
     width: 100%;

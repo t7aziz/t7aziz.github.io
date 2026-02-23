@@ -3,6 +3,13 @@ import { Header, Timeline } from '../components/components.js';
 export function AboutPage() {
     const timelineEvents = [
         {
+            start_date: "Jan 2025",
+            end_date: "Present",
+            title: "Founding Software Engineer (Full-time)",
+            organization: "Modelmouse 🚀",
+            description: "Lead the design and implementation of the Modelmouse software service"
+        },
+        {
             start_date: "July",
             end_date: "Dec 2024",
             title: "Software Engineer (Full-time)",
@@ -62,16 +69,16 @@ export function AboutPage() {
             
             <div class="section-content">
                 <section class="section">
-                    <h2>On Me</h2>
-                    <p>My engineering journey has taken me through diverse domains; from space satellite sensors to rockets, healthcare data systems, and the software engineering I do now which is mostly backend, distributed, and data systems. What ties it all together is the joy of solving problems with code and people.</p>
-                    <p>I initially enrolled in Mechatronics Engineering at the University of Waterloo, and quickly found fun in software through my co-ops. I wanted to learn more, so I took an option in computing and completed a large amount of the computer science curriculum. Beyond that I've studied by hitting the textbooks, doing my own projects, talking to industry experts, and LeetCode (lol).   </p>
+                    <h2>About Me</h2>
+                    <p>My engineering journey has taken me through diverse domains; from space satellite sensors to rockets, healthcare data systems, and the software engineering I do now which is mostly backend, distributed, and data systems. What ties it all together is my inclination for creative problem solving, especially in collaboration with others.</p>
+                    <p>I initially enrolled in Mechatronics Engineering at the University of Waterloo, and quickly found fun in software development through my co-ops. Wanting to specialize, I took an option in computing to further the software and computer science eduction I wanted. </p>
+                    <p>Outside of work I enjoy basketball, literature, and game development</p>
                 </section>
                 
                 <section class="section">
                     <h2>What I Do</h2>
-                    <p>Today, my deepest skills are in backend and data systems. My recent work at Sentia involved building an enterprise data storage platform, where we relied on Azure as well as our own database technologies in a distributed system.</p>
-                    <p>Beyond professional work, I'm active in open source; my npm package "vis-jit" helps developers visualize Node.js JIT optimizations and reached hundreds of weekly downloads.</p>
-                    <p>Aside from my projects here, I've also done game development which is very fun. Over the past year, I've learned a lot about game engines and graphics programming such as writing shader programs in GLSL.</p>
+                    <p>Today, my deepest skills are in backend and data systems. I like Python and C++. My current work at Modelmouse has me designing system architecture (we use Django, MongoDB and other technologies), API integrations, AI integration, data validation, deployment, and production monitoring.</p>
+                    <p>Beyond my full-time commitments, I'm active in open source -- my npm package "vis-jit" which I maintain helps developers visualize Node.js JIT optimizations and reached hundreds of weekly downloads.</p>
                 </section>
                 
                 <section class="section">
