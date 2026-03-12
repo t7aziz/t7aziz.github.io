@@ -7,7 +7,7 @@ export function AboutPage() {
             end_date: "Present",
             title: "Founding Software Engineer (Full-time)",
             organization: "Modelmouse 🚀",
-            description: "Lead the design and implementation of the Modelmouse software service"
+            description: "Lead the architecture design and implementation of the Modelmouse software service"
         },
         {
             start_date: "July",
@@ -72,12 +72,12 @@ export function AboutPage() {
                     <h2>About Me</h2>
                     <p>My engineering journey has taken me through diverse domains; from space satellite sensors to rockets, healthcare data systems, and the software engineering I do now which is mostly backend, distributed, and data systems. What ties it all together is my inclination for creative problem solving, especially in collaboration with others.</p>
                     <p>I initially enrolled in Mechatronics Engineering at the University of Waterloo, and quickly found fun in software development through my co-ops. Wanting to specialize, I took an option in computing to further the software and computer science eduction I wanted. </p>
-                    <p>Outside of work I enjoy basketball, literature, and game development</p>
+                    <p>Outside of work I enjoy basketball, literature, and game development.</p>
                 </section>
                 
                 <section class="section">
                     <h2>What I Do</h2>
-                    <p>Today, my deepest skills are in backend and data systems. I like Python and C++. My current work at Modelmouse has me designing system architecture (we use Django, MongoDB and other technologies), API integrations, AI integration, data validation, deployment, and production monitoring.</p>
+                    <p>Today, my deepest skills are in backend and data systems. I like Python and C++. My current work at Modelmouse has me designing system architecture (we use FastAPI, PostgreSQL and other technologies), API integrations, AI integration, data validation, deployment, and production monitoring.</p>
                     <p>Beyond my full-time commitments, I'm active in open source -- my npm package "vis-jit" which I maintain helps developers visualize Node.js JIT optimizations and reached hundreds of weekly downloads.</p>
                 </section>
                 
